@@ -1,6 +1,6 @@
 var req = new XMLHttpRequest();
 req.onload = reqListener;
-req.open('get', 'https://sheilta.apps.openu.ac.il/pls/dmyopt2/course_info.courses', true);
+req.open('get', 'https://sheilta.apps.openu.ac.il/pls/dmyopt2/myop.myop_screen', true);
 req.withCredentials = true;
 req.send();
 
