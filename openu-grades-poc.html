@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itayst PoC</title>
+    <style>
+    	.mainRunner {
+          border: 1px solid #000;
+        }
+
+        .img1 {
+          border: 1px solid #f00;
+          position: relative;
+          z-index: 2;
+        }
+
+        .img2 {
+          border: 1px solid #0f0;
+          position: relative;
+          z-index: 1;
+          top: -111px;
+          left: -232px;
+        }
+    </style>
 </head>
 <body>
     <p>Click on this cool image!</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHlY7jda7OEmJpPl0ga2UpDzFX8iE9OyVWICN1Qtefc0EWL9NqvlpI1gxKL4dTHTAuk_U&usqp=CAU">
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHlY7jda7OEmJpPl0ga2UpDzFX8iE9OyVWICN1Qtefc0EWL9NqvlpI1gxKL4dTHTAuk_U"> -->
+    <img class="img1" src="https://cdn-icons-png.flaticon.com/512/4302/4302307.png" width="300px" />
+    <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU1acicAliX7HqnmzNmAWOmsKowHmfXPVkw-4RA-BaPw" width="150px" />
     <script>
         function handleOnClick() {
           var newTab = window.open('https://sheilta.apps.openu.ac.il/pls/dmyopt2/myop.myop_screen');
